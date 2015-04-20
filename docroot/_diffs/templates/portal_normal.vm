@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - $company_name</title>
+
+	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+
+	$theme.include($top_head_include)
+	
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="$javascript_folder/unslider.min.js"></script>
+	<script src="$javascript_folder/jquery.colorbox.min.js"></script>
+</head>
+
+<body class="$css_class">
+
+<a href="#main-content" id="skip-to-content">#language ("skip-to-content")</a>
+
+$theme.include($body_top_include)
+
+#dockbar()
+
+<div class="container-fluid" id="wrapper">
+	
+	<div class="row-fluid row-top wrap">
+		<header>
+			<div class="span12">
+				<div class="row-fluid">
+					<div class="span2">
+						<span id="logo">
+							<a href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+								<img src="$images_folder/redsoftlogo.png">
+							</a>
+						</span>
+					</div>
+					<div class="span8">
+						#if ($has_navigation || $is_signed_in)
+							#parse ("$full_templates_path/navigation.vm")
+						#end
+					</div>
+					<div class="span2">
+						<ul id="social">
+							<li><a href="http://www.facebook.com"><i class="icon-facebook-sign"></i></a></li>
+							<li><a href="http://www.facebook.com"><i class="icon-youtube-play"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div id="content">
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
+
+
+	#if ($layout.getFriendlyURL() == "/servicios")
+		#set ($foot_class = "pie servicios")
+	#elseif ($layout.getFriendlyURL() == "/contactenos")
+		#set ($foot_class = "pie contactenos")
+	#elseif ($layout.getFriendlyURL() == "/noticias")
+		#set ($foot_class = "pie noticias")
+	#else
+		#set ($foot_class = "pie general")
+	#end
+	
+	<footer id="footer" class="$foot_class row-fluid" role="contentinfo">
+		<p id="creditos">Redsoft Corp. Centroam&eacute;rica</p>
+		#if ($foot_class == "pie general")
+		<img src="$images_folder/footer-dots-25.png">
+		#else
+		<img src="$images_folder/footer-dots-25w.png">
+		#end	
+	</footer>
+	
+</div>
+
+$theme.include($body_bottom_include)
+
+$theme.include($bottom_include)
+
+</body>
+
+</html>
