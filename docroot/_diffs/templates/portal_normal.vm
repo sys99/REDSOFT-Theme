@@ -95,8 +95,48 @@ $theme.include($body_bottom_include)
 
 $theme.include($bottom_include)
 
+#if ($layout.getFriendlyURL() == "/portafolio")
 <script src="$javascript_folder/animatedModal.min.js"></script>
-<script src="$javascript_folder/animate.js"></script>
+<script>
+$("#partner01").animatedModal({
+	modalTarget:'modal-01',
+	animatedIn:'lightSpeedIn',
+	animatedOut:'bounceOutDown',
+	color:'#3498db',
+});
+$("#partner02").animatedModal({
+	modalTarget:'modal-02',
+	animatedIn:'lightSpeedIn',
+	animatedOut:'bounceOutDown',
+	color:'#3498db',
+});
+$("#partner03").animatedModal({
+	modalTarget:'modal-03',
+	animatedIn:'lightSpeedIn',
+	animatedOut:'bounceOutDown',
+	color:'#3498db',
+});
+$("#partner04").animatedModal({
+	modalTarget:'modal-04',
+	animatedIn:'lightSpeedIn',
+	animatedOut:'bounceOutDown',
+	color:'#3498db',
+});
+$("#partner05").animatedModal({
+	modalTarget:'modal-05',
+	animatedIn:'lightSpeedIn',
+	animatedOut:'bounceOutDown',
+	color:'#3498db',
+});
+$("#partner06").animatedModal({
+	modalTarget:'modal-06',
+	animatedIn:'lightSpeedIn',
+	animatedOut:'bounceOutDown',
+	color:'#3498db',
+});
+</script>
+#end
+
 </body>
 
 </html>
