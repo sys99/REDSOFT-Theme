@@ -100,39 +100,39 @@ $theme.include($bottom_include)
 <script>
 $("#partner01").animatedModal({
 	modalTarget:'modal-01',
-	animatedIn:'lightSpeedIn',
-	animatedOut:'bounceOutDown',
-	color:'#3498db',
+	animatedIn:'zoomInUp',
+	animatedOut:'zoomOutDown',
+	color:'rgba(0, 0, 0, 0.9)',
 });
 $("#partner02").animatedModal({
 	modalTarget:'modal-02',
-	animatedIn:'lightSpeedIn',
-	animatedOut:'bounceOutDown',
-	color:'#3498db',
+	animatedIn:'zoomInUp',
+	animatedOut:'zoomOutDown',
+	color:'rgba(0, 0, 0, 0.9)',
 });
 $("#partner03").animatedModal({
 	modalTarget:'modal-03',
-	animatedIn:'lightSpeedIn',
-	animatedOut:'bounceOutDown',
-	color:'#3498db',
+	animatedIn:'zoomInUp',
+	animatedOut:'zoomOutDown',
+	color:'rgba(0, 0, 0, 0.9)',
 });
 $("#partner04").animatedModal({
 	modalTarget:'modal-04',
-	animatedIn:'lightSpeedIn',
-	animatedOut:'bounceOutDown',
-	color:'#3498db',
+	animatedIn:'zoomInUp',
+	animatedOut:'zoomOutDown',
+	color:'rgba(0, 0, 0, 0.9)',
 });
 $("#partner05").animatedModal({
 	modalTarget:'modal-05',
-	animatedIn:'lightSpeedIn',
-	animatedOut:'bounceOutDown',
-	color:'#3498db',
+	animatedIn:'zoomInUp',
+	animatedOut:'zoomOutDown',
+	color:'rgba(0, 0, 0, 0.9)',
 });
 $("#partner06").animatedModal({
 	modalTarget:'modal-06',
-	animatedIn:'lightSpeedIn',
-	animatedOut:'bounceOutDown',
-	color:'#3498db',
+	animatedIn:'zoomInUp',
+	animatedOut:'zoomOutDown',
+	color:'rgba(0, 0, 0, 0.9)',
 });
 </script>
 #end
