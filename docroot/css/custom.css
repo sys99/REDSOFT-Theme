@@ -981,6 +981,9 @@ $XXL: 180em; // 2880px
 		background-size:cover;
 		background-repeat:no-repeat;
 		background-position: right center;
+		@include MQ(S) {
+			width:50%;
+			}
 		&:hover {
 			background-position: left center;
 		}
@@ -988,6 +991,9 @@ $XXL: 180em; // 2880px
 		img {
 			padding:3.5em;
 			box-sizing:border-box;
+			@include MQ(S) {
+				padding:0.75em;
+			}
 		}
 	}
 	
