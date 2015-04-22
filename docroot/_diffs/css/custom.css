@@ -855,7 +855,7 @@ $dockbarOpenGradientStart: #aaa;
 	
 	#main-content {
 		> .row-fluid:first-child {
-			background-color:#eee;
+			/* background-color:#eee; */
 		}
 	}
 	
@@ -990,7 +990,20 @@ $dockbarOpenGradientStart: #aaa;
 			}
 		}
 	}
-	
+	/*-- NOTICIAS --*/
+	.noticia {
+		border-bottom: solid 3px #fff;
+	}
+	.entry-image {
+		img {
+			display:block;
+			width:100%;
+			height:auto;
+		}
+	}
+	.entry-meta {
+		background-color:#000;
+	}
 	/* -- PANELS AND DOCKBAR EXTRAS -- */
 	
 	.lfr-device-preview-panel {
