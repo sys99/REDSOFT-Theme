@@ -69,7 +69,7 @@
 		margin-bottom: 7px;
 
 		&:focus {
-			border-color: rgba(12, 236, 117, 0.8);
+			border-color: rgba(59, 59, 59, 0.8);
 		}
 	}
 
@@ -273,11 +273,11 @@
 		.nav {
 			> li {
 				> a {
-					color: #FFF;
+					color: #777;
 					line-height: 31px;
 
 					&:focus, &:hover {
-						color: #FFF;
+						color: #777;
 					}
 
 					[class^="icon-"], [class*=" icon-"] {

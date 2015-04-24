@@ -134,6 +134,7 @@ $("#partner06").animatedModal({
 	animatedOut:'zoomOutDown',
 	color:'rgba(0, 0, 0, 0.9)',
 });
+
 </script>
 #end
 
