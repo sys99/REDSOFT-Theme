@@ -834,7 +834,7 @@ $XXL: 180em; // 2880px
 					color:#fff;
 					background-repeat:no-repeat;
 					background-attachment:fixed;
-					background-size:contain;
+					background-size:cover;
 					background-position:center bottom;
 					
 					img{
@@ -1166,7 +1166,28 @@ $XXL: 180em; // 2880px
 		}
 	}
 	
+	.dockbar .navbar-inner .nav > li {
+		/*background-color: gray;*/
+		background-image: none;
+	}
+	
+	.dockbar .navbar-inner .nav-collapse>.nav {
+		background-color: #fff;
+	}
+	
+	.dockbar .navbar-inner .nav-collapse>.nav>li>a:hover {
+	}
+	
+	.dockbar .navbar-inner .nav-add-controls>li>a.toggle-controls-link [class*=" icon-"]:hover {
+		color: #fff;
+	}
+	
+	.nav-collapse .nav>li>a {
+		border-radius: 0;
+	}
+	
 	/*-- SLIDESHOW -- */
+	
 	.slideshow {
 		position: relative;
 		overflow: auto;

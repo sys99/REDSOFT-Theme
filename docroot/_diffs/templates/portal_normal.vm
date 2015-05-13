@@ -17,6 +17,9 @@
 	
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="$javascript_folder/unslider.min.js"></script>
+	#if ($layout.getFriendlyURL() == "/portafolio")
+		<script src="$javascript_folder/animatedModal.min.js"></script>
+	#end
 	
 </head>
 
@@ -94,49 +97,6 @@ $theme.include($body_top_include)
 $theme.include($body_bottom_include)
 
 $theme.include($bottom_include)
-
-#if ($layout.getFriendlyURL() == "/portafolio")
-<script src="$javascript_folder/animatedModal.min.js"></script>
-<script>
-$("#partner01").animatedModal({
-	modalTarget:'modal-01',
-	animatedIn:'zoomInUp',
-	animatedOut:'zoomOutDown',
-	color:'rgba(0, 0, 0, 0.9)',
-});
-$("#partner02").animatedModal({
-	modalTarget:'modal-02',
-	animatedIn:'zoomInUp',
-	animatedOut:'zoomOutDown',
-	color:'rgba(0, 0, 0, 0.9)',
-});
-$("#partner03").animatedModal({
-	modalTarget:'modal-03',
-	animatedIn:'zoomInUp',
-	animatedOut:'zoomOutDown',
-	color:'rgba(0, 0, 0, 0.9)',
-});
-$("#partner04").animatedModal({
-	modalTarget:'modal-04',
-	animatedIn:'zoomInUp',
-	animatedOut:'zoomOutDown',
-	color:'rgba(0, 0, 0, 0.9)',
-});
-$("#partner05").animatedModal({
-	modalTarget:'modal-05',
-	animatedIn:'zoomInUp',
-	animatedOut:'zoomOutDown',
-	color:'rgba(0, 0, 0, 0.9)',
-});
-$("#partner06").animatedModal({
-	modalTarget:'modal-06',
-	animatedIn:'zoomInUp',
-	animatedOut:'zoomOutDown',
-	color:'rgba(0, 0, 0, 0.9)',
-});
-
-</script>
-#end
 
 </body>
 
